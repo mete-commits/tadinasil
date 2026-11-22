@@ -61,7 +61,14 @@ a{color:var(--acc)}
 <li>Engelleme işlemleri</li>
 </ul>
 <p>Profil fotoğrafı diğer kullanıcılara açık olarak gösterilmez. Kullanıcı adı, yorum ve ürün katkılarıyla birlikte diğer kullanıcılara gösterilebilir.</p>
-<h4>D. Teknik ve güvenlik bilgileri</h4>
+<h4>D. Kullanım istatistiği kayıtları</h4>
+<ul>
+<li>Kullanıcı adı ve giriş yöntemi (Google, e-posta veya telefon)</li>
+<li>Hesabın oluşturulma tarihi ve son görülme zamanı</li>
+<li>Uygulamanın hangi günlerde kullanıldığına ilişkin gün bazında kayıt</li>
+</ul>
+<p>Bu kayıtlar uygulamanın kullanım istatistiklerinin izlenmesi, hizmetin geliştirilmesi ve güvenliğinin sağlanması amacıyla tutulur ve yalnızca uygulama yöneticileri tarafından görüntülenebilir. Hesabın silinmesi hâlinde bu kayıtlar da silinir.</p>
+<h4>E. Teknik ve güvenlik bilgileri</h4>
 <p>Uygulama kendi kodu aracılığıyla cihaz modeli, işletim sistemi, reklam kimliği veya rehber bilgisi toplamaz.</p>
 <p>Bununla birlikte Firebase ve Google hizmetleri; kimlik doğrulama, güvenlik ve kötüye kullanımın önlenmesi kapsamında IP adresi, kullanıcı aracısı (user-agent) ve teknik doğrulama bilgilerini işleyebilir.</p>
 <p>Telefonla kimlik doğrulama ve uygulama bütünlüğünün kontrolü sırasında ilgili Google doğrulama hizmetleri kullanılabilir.</p>
@@ -76,7 +83,8 @@ a{color:var(--acc)}
 <li>Bölgesel fiyat karşılaştırmalarının yapılması</li>
 <li>Oy, favori ve bildirim işlemlerinin yürütülmesi</li>
 <li>Yorumlara cevap verilmesi ve kullanıcı etkileşimlerinin sağlanması</li>
-<li>Şikâyetlerin değerlendirilmesi ve uygunsuz içeriklerin yönetilmesi</li>
+<li>Şikâyetlerin değerlendirilmesi ve uygunsuz içeriklerin yönetilmesi (yönetici kararına yardımcı olmak üzere yapay zekâ desteğinden yararlanılabilir)</li>
+<li>Uygulama kullanım istatistiklerinin izlenmesi ve hizmetin geliştirilmesi</li>
 <li>Uygulama güvenliğinin ve kullanıcı hesaplarının korunması</li>
 <li>Hesap silme ve veri silme taleplerinin yerine getirilmesi</li>
 <li>Kullanıcının ayrıca açık rıza vermesi hâlinde zevk profili oluşturulması</li>
@@ -114,6 +122,8 @@ a{color:var(--acc)}
 </ul>
 <p><strong>Open Food Facts (barkod ile ürün arama):</strong></p>
 <p>Ürün eklerken barkod okutulduğunda veya barkod numarası yazıldığında, ürün adı ve markasının otomatik getirilebilmesi için okutulan barkod numarası, herkese açık bir ürün veri tabanı olan Open Food Facts'in sunucularına (world.openfoodfacts.org) gönderilir. İnternet bağlantısının doğası gereği bu istek sırasında cihazın IP adresi de söz konusu hizmet tarafından görülebilir. Kullanıcı adı, e-posta adresi, telefon numarası ve yorumlar gibi bilgiler bu hizmete gönderilmez. Barkodla arama özelliğini kullanmayan kullanıcılar için bu aktarım yapılmaz.</p>
+<p><strong>Yapay zekâ destekli şikâyet incelemesi (Anthropic):</strong></p>
+<p>Kullanıcılar tarafından şikâyet edilen yorumların incelenmesinde, uygulama yöneticileri karar vermelerine yardımcı olması için isteğe bağlı olarak Anthropic PBC'nin yapay zekâ hizmetinden yararlanabilir. Bu durumda şikâyet edilen yorumun metni, ürün adı, şikâyet nedeni ve ilgili kullanıcının toplam şikâyet ile yorum sayısı Anthropic'in (Amerika Birleşik Devletleri) sunucularına gönderilir. Kullanıcı adı, e-posta adresi, telefon numarası ve kullanıcı kimliği (UID) gönderilmez. Yapay zekâ yalnızca öneri üretir; yorumun kaldırılması veya hesabın askıya alınması gibi kararlar her zaman bir yönetici tarafından verilir, yalnızca otomatik işleme dayanmaz.</p>
 <p>Google'ın global altyapısı ve hizmet sağlayıcıları aracılığıyla bazı teknik veriler başka ülkelerde de işlenebilir.</p>
 <p>Kişisel veriler, uygulamanın çalıştırılması, kimlik doğrulama, veri saklama, güvenlik ve teknik hizmetlerin sağlanması amaçlarıyla Google ve ilgili hizmet sağlayıcılarına aktarılabilir.</p>
 <p>Kullanıcının uygulamada herkese açık olarak paylaşmayı seçtiği ürün, yorum, puan, fiyat, market, şehir ve kullanıcı adı bilgileri diğer uygulama kullanıcıları tarafından görüntülenebilir.</p>
@@ -141,6 +151,7 @@ a{color:var(--acc)}
 <li>Bildirimleri silinir.</li>
 <li>Profil fotoğrafı silinir.</li>
 <li>Zevk profili silinir.</li>
+<li>Kullanım istatistiği kayıtları (hesap özeti ve gün bazında kullanım kaydı) silinir.</li>
 </ul>
 <p>Kullanıcının oluşturduğu ürün kayıtları platformda kalabilir. Bu kayıtlarla ilişkili oluşturucu kullanıcı bilgisi anonimleştirilerek gösterilebilir.</p>
 <p>Başka kullanıcıların yorumlarına verilmiş cevaplar, platformun içerik bütünlüğünün korunması amacıyla tutulabilir. Bu cevaplarda kullanıcı kimliği kaldırılarak kullanıcı adı "Silinmiş kullanıcı" şeklinde gösterilebilir.</p>
